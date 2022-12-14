@@ -4,276 +4,76 @@ local win = DiscordLib:Window("Nick's Hub")
 
 local serv = win:Server("Main", "")
 
-local btns = serv:Channel("GUIS")
+local btns = serv:Channel("Buttons")
+
 
 btns:Button("CMD-X", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-DiscordLib:Notification("Notification", "Loaded!", "Okay!")
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
 btns:Seperator()
 
 btns:Button("Infinity Yield", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-DiscordLib:Notification("Notification", "Loaded", "Okay!")
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
 btns:Seperator()
 
 btns:Button("UTMM GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/The-roblox-utmm-kit-destroyer/main/The%20UTMM%20KIT%20destroyer.lua",true))()
-DiscordLib:Notification("Notification", "Loaded!", "Okay!")
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
 btns:Seperator()
 
 btns:Button("UT DUNGEONS GUI", function()
-
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextButton_9 = Instance.new("TextButton")
-
---Properties:
-
-ScreenGui.Parent = game.CoreGui
-
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.Position = UDim2.new(0.093815401, 0, 0.1, 0)
-Frame.Size = UDim2.new(0, 195, 0, 356)
-Frame.Draggable = true
-
-TextLabel.Parent = ScreenGui
-TextLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 217)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 255, 255)
-TextLabel.Position = UDim2.new(0.0937178135, 0, 0.155597717, 0)
-TextLabel.Size = UDim2.new(0, 195, 0, 37)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Nick's UD Dungeon UI Rewrite"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-
-ScrollingFrame.Parent = ScreenGui
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 251, 255)
-ScrollingFrame.Position = UDim2.new(0.0916580856, 0, 0.227703989, 0)
-ScrollingFrame.Size = UDim2.new(0, 197, 0, 317)
-
-TextButton.Parent = ScrollingFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 32, 23)
-TextButton.Position = UDim2.new(0.00179444905, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 184, 0, 64)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Heal(f)"
-TextButton.TextColor3 = Color3.fromRGB(23, 22, 42)
-TextButton.TextSize = 14.000
-TextButton.MouseButton1Down:connect(function()
-   local A_1 = "Deal Heal"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/UT-Dungeons-script/blob/main/Script"))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
-TextButton_2.Parent = ScrollingFrame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-TextButton_2.Position = UDim2.new(0.00200000009, 0, 0.0500000007, 0)
-TextButton_2.Size = UDim2.new(0, 184, 0, 64)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Devastating Slash (e)"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 243, 255)
-TextButton_2.TextSize = 14.000
-TextButton_2.MouseButton1Down:connect(function()
-  local A_1 = "Devestating Slash"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
+btns:Seperator()
 
-end)
-TextButton_3.Parent = ScrollingFrame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.Position = UDim2.new(0.00200000009, 0, 0.100000001, 0)
-TextButton_3.Size = UDim2.new(0, 184, 0, 64)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "Stabby Stab Stab (g)"
-TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.TextSize = 13.000
-TextButton_3.MouseButton1Down:connect(function()
-local A_1 = "Endless Stabs"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
+btns:Button("Doors Blue", function()
+loadstring(game:HttpGet("https://https://raw.githubusercontent.com/NICKISBAD/doorsb1/main/Doors%20Blue"))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
+btns:Seperator()
 
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "e" then 
-local A_1 = "Devestating Slash"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
+btns:Button("Raise-a-floppa 2", function()
+loadstring(game:HttpGet("https://cheeseskid.tk/shit/theflopdontstop.lua",true))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "f" then
-local A_1 = "Deal Heal"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(1)
-local A_1 = "Pulse of Determination"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(1)
-local A_1 = "Chaos Heal"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(1)
-local A_1 = "Overclock Heal"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(1)
-local A_1 = "Determination"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
+btns:Seperator()
+
+btns:Button("Project Pokemon", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SigurdOrUsername/ProjectsLua/main/Loadgui/Loader.lua"))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "g" then
-local A_1 = "Endless Stabs"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Knife Throw"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Death Smite"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-end
+btns:Seperator()
+
+btns:Button("Dark Dex", function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "c" then
-local A_1 = "Vorpal Strike"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
+btns:Seperator()
+
+btns:Button("Piggy items grabber", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/LuA7x8e4"))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
-TextButton_4.Parent = ScrollingFrame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
-TextButton_4.Position = UDim2.new(0.00200000009, 0, 0.159999992, 0)
-TextButton_4.Size = UDim2.new(0, 184, 0, 64)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "Smite (z)"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 13.000
-TextButton_4.MouseButton1Down:connect(function()
-local condition = true
-while condition do
-local A_1 = "Death Smite"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-end
+btns:Seperator()
+
+btns:Button("Project Pokemon 2", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Project-pokemon/main/File"))()
+DiscordLib:Notification("Notification", "Done!", "Okay!")
 end)
 
-TextButton_9.Parent = ScrollingFrame
-TextButton_9.BackgroundColor3 = Color3.fromRGB(178,34,34)
-TextButton_9.Position = UDim2.new(0.00200000009, 0, 0.24000000, 0)
-TextButton_9.Size = UDim2.new(0, 184, 0, 64)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = "CMDX"
-TextButton_9.TextColor3 = Color3.fromRGB(0,0,0)
-TextButton_9.TextSize = 14.000
-TextButton_9.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-end)
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
 
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "k" then
-local A_1 = "Riptide"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "PIPIS"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Synergy Pulse"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Electric Sword"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Supreme Dog Bomb"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-
-end
-end)
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "b" then
-local A_1 = "Six Souls"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
-end)
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "n" then
-local A_1 = "Flaming Propel"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
-end)
-
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "b" then
-local A_1 = "Supreme Damage Presents"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Damage Presents"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
-end)
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "z" then
-local A_1 = "Death Smite"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
-end)
-DiscordLib:Notification("Notification", "Loaded", "Okay!")
-end)
