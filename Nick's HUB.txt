@@ -4,76 +4,121 @@ local win = DiscordLib:Window("Nick's Hub")
 
 local serv = win:Server("Main", "")
 
-local btns = serv:Channel("Buttons")
+local btns = serv:Channel("Universal Scripts")
 
 
 btns:Button("CMD-X", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
 btns:Seperator()
 
 btns:Button("Infinity Yield", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("UTMM GUI", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/The-roblox-utmm-kit-destroyer/main/The%20UTMM%20KIT%20destroyer.lua",true))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("UT DUNGEONS GUI", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/UT-Dungeons-script/blob/main/Script"))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("Doors Blue", function()
-loadstring(game:HttpGet("https://https://raw.githubusercontent.com/NICKISBAD/doorsb1/main/Doors%20Blue"))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("Raise-a-floppa 2", function()
-loadstring(game:HttpGet("https://cheeseskid.tk/shit/theflopdontstop.lua",true))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("Project Pokemon", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SigurdOrUsername/ProjectsLua/main/Loadgui/Loader.lua"))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
 btns:Seperator()
 
 btns:Button("Dark Dex", function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4"))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
 btns:Seperator()
+
+btns:Button("FPS Booster", function()
+loadstring(game:HttpGet(('https://github.com/MarsQQ/ScriptHubScripts/blob/master/FPS%20Boost'),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Aimbot", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Aimbots/main/aimbota"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("UT games")
+
+btns:Button("UTMM GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/The-roblox-utmm-kit-destroyer/main/The%20UTMM%20KIT%20destroyer.lua",true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("UT DUNGEONS GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/UT-Dungeons-script/blob/main/Script"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Doors")
+
+btns:Button("Doors Blue", function()
+loadstring(game:HttpGet("https://https://raw.githubusercontent.com/NICKISBAD/doorsb1/main/Doors%20Blue"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Raise a floppa 2")
+
+btns:Button("Raise-a-floppa 2", function()
+loadstring(game:HttpGet("https://cheeseskid.tk/shit/theflopdontstop.lua",true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Project Pokemon")
+
+btns:Button("Project Pokemon", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SigurdOrUsername/ProjectsLua/main/Loadgui/Loader.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+local btns = serv:Channel("Piggy")
 
 btns:Button("Piggy items grabber", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/LuA7x8e4"))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Hubs")
+
+btns:Button("Coco Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
 btns:Seperator()
 
-btns:Button("Project Pokemon 2", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Project-pokemon/main/File"))()
-DiscordLib:Notification("Notification", "Done!", "Okay!")
+btns:Button("Zyrex-Hub", function()
+_G.Toggle_GUI = Enum.KeyCode.RightControl
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/master/Main.lua"),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
-win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
+local btns = serv:Channel("Blox Hunt")
 
+btns:Button("Bloxhunt gui", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/BLOXWARE_v1.0.txt", true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("RGD")
+
+btns:Button("Randomly Gen Droids", function()
+while wait() do
+ for i,v in pairs(game.Workspace:GetDescendants()) do
+     if v:IsA("Humanoid") and v.Parent.Name ~= game.Players.LocalPlayer.Name then
+         v.Health = 0
+     end
+ end
+end
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local DiscordLib:Toggle_GUI = Enum.KeyCode.RightControl
+
+win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
