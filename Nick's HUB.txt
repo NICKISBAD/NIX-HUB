@@ -56,8 +56,15 @@ end)
 
 local btns = serv:Channel("Doors")
 
-btns:Button("Doors Blue", function()
+btns:Button("Doors (Blue)", function()
 loadstring(game:HttpGet("https://https://raw.githubusercontent.com/NICKISBAD/doorsb1/main/Doors%20Blue"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Doors (Kardin)", function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
