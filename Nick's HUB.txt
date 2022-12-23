@@ -110,15 +110,24 @@ local btns = serv:Channel("RGD")
 
 btns:Button("Randomly Gen Droids", function()
 while wait() do
- for i,v in pairs(game.Workspace:GetDescendants()) do
+ for i,v in pairs(game.Workspace.Room.Enemies:GetDescendants()) do
      if v:IsA("Humanoid") and v.Parent.Name ~= game.Players.LocalPlayer.Name then
          v.Health = 0
      end
  end
 end
+wait(1)
+while wait() do
+for i,v in pairs(game.Workspace.Room.Enemies:GetDescendants()) do
+ if v:IsA("Humanoid") and v.Parent.Name ~= game.Players.LocalPlayer.Name then
+  v.WalkSpeed = 0
+     end
+ end
+end
+
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
-local DiscordLib:Toggle_GUI = Enum.KeyCode.RightControl
+
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
