@@ -57,7 +57,7 @@ end)
 btns:Seperator()
 
 btns:Button("UTMM All Weapons", function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/NICKISBAD/Utmm-all-weapons2/main/Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Utmm-all-weapons2/main/Script"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
