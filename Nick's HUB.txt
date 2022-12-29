@@ -57,7 +57,11 @@ end)
 btns:Seperator()
 
 btns:Button("UTMM All Weapons", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Utmm-all-weapons2/main/Script"))()
+for _,v in pairs(game.Players.LocalPlayer.Weapons:GetDescendants()) do
+if v:IsA("BoolValue") and v.Value == false then
+v.Value = true
+  end
+end
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
