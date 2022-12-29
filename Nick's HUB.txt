@@ -58,10 +58,9 @@ btns:Seperator()
 
 btns:Button("UTMM All Weapons", function()
 for _,v in pairs(game.Players.LocalPlayer.Weapons:GetDescendants()) do
-if v:IsA("BoolValue") and v.Value == false then
+if v:IsA("BoolValue") and v.Value = false then
 v.Value = true
   end
-end
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
