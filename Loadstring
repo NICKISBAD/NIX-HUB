@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20HUB.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20HUB.txt"))()
