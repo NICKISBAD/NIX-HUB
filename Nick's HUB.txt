@@ -42,7 +42,7 @@ end)
 
 local btns = serv:Channel("UT games")
 
-btns:Button("UTMM GUI", function()
+btns:Button("UTMM GUI (buggy)", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/The-roblox-utmm-kit-destroyer/main/The%20UTMM%20KIT%20destroyer.lua",true))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
@@ -51,16 +51,6 @@ btns:Seperator()
 
 btns:Button("UT DUNGEONS GUI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/UT-Dungeons-script/blob/main/Script"))()
-DiscordLib:Notification("Loaded!", "Done!", "Okay!")
-end)
-
-btns:Seperator()
-
-btns:Button("UTMM All Weapons", function()
-for _,v in pairs(game.Players.LocalPlayer.Weapons:GetDescendants()) do
-if v:IsA("BoolValue") and v.Value = false then
-v.Value = true
-  end
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
