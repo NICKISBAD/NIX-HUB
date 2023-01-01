@@ -141,6 +141,13 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfai
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+btns:Seperator()
+
+btns:Button("EZ-Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 local btns = serv:Channel("Blox Hunt")
 
 btns:Button("Bloxhunt gui", function()
@@ -167,6 +174,27 @@ for i,v in pairs(game.Workspace.Room.Enemies:GetDescendants()) do
  end
 end
 
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("MM2")
+
+btns:Button("YAX GUI", function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("OminousVibes GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OminousVibes-Exploit/Scripts/main/Murder%20Mystery%202.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Xenny-Ware", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
