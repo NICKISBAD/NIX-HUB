@@ -54,6 +54,27 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/UT-Dungeons
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+btns:Seperator()
+
+btns:Button("All Weapons 2", function()
+for _,v in pairs(game.Players.LocalPlayer.Weapons:GetDescendants()) do
+if v:IsA("BoolValue") and v.Value == false then
+v.Value = true
+  end
+end
+DiscordLib:Notification("Check your menu!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Auto Reset at level 100", function()
+local condition = true
+while condition do
+wait(1)
+game:GetService("Lighting").Reset:FireServer()
+end
+end)
+
 local btns = serv:Channel("Doors")
 
 btns:Button("Doors (Blue)", function()
@@ -106,7 +127,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/m
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
-btns:Seperator
+btns:Seperator()
 
 btns:Button("VG-HUB", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
@@ -148,7 +169,6 @@ end
 
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
-
 
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
