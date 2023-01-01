@@ -106,6 +106,20 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/m
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+btns:Seperator
+
+btns:Button("VG-HUB", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Unfair-Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 local btns = serv:Channel("Blox Hunt")
 
 btns:Button("Bloxhunt gui", function()
