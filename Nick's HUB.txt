@@ -75,6 +75,13 @@ game:GetService("Lighting").Reset:FireServer()
 end
 end)
 
+btns:Seperator()
+
+btns:Button("UT:BossBattles", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/xxDeziQxx/UndertaleBossBattles/main/ByxxDeziQxx'))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 local btns = serv:Channel("Doors")
 
 btns:Button("Doors (Blue)", function()
@@ -145,6 +152,21 @@ btns:Seperator()
 
 btns:Button("EZ-Hub", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Chaos-Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xChaoticVoid/Chaos-Hub-v1/main/ChaosHub.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Lazy-Hub", function()
+repeat wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
@@ -258,6 +280,13 @@ local btns = serv:Channel("Bedwars")
 
 btns:Button("Vape V4", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Shindo Life 2")
+
+btns:Button("Reav-Gui", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2_autofarm/main/main.lua", true))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
