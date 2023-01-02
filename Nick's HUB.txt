@@ -193,10 +193,72 @@ end)
 
 btns:Seperator()
 
+btns:Button("ACSU-GUI", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/GAME/main/muder%20mys..2.txt'))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
 btns:Button("Xenny-Ware", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+local btns = serv:Channel("Blox Fruits")
+
+btns:Button("Netna Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NinoGod/NetnaYay/8d21ce23346c500c93bb8b4a71f7791e4058a70b/startload.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("HoHo-Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Dungeon Quest")
+
+btns:Button("DQ GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/Paid/DunegonQuest.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Pet Sim X")
+
+btns:Button("ACSU GUI", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/PetXfolder/PetSimXMobile.lua'))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("King Legacy")
+
+btns:Button("KingPiece GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/KingPiece.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Sannin GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Zombie Attack")
+
+btns:Button("ACSU-GUI", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/ZombieAtack.lua'))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+local btns = serv:Channel("Bedwars")
+
+btns:Button("Vape V4", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
 
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
