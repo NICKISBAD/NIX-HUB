@@ -98,7 +98,7 @@ end)
 
 local btns = serv:Channel("Raise a floppa 2")
 
-btns:Button("Raise-a-floppa 2", function()
+btns:Button("Leo-Hub UI", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tip52/Leo-hub/main/loader.lua"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
