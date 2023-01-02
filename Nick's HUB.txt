@@ -99,7 +99,21 @@ end)
 local btns = serv:Channel("Raise a floppa 2")
 
 btns:Button("Raise-a-floppa 2", function()
-loadstring(game:HttpGet("https://cheeseskid.tk/shit/theflopdontstop.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tip52/Leo-hub/main/loader.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("PsyGen UI", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EZhKZEc4"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Realking UI", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Raise-A-Floppa-2/main/Gui'))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
