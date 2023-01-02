@@ -157,7 +157,7 @@ end)
 
 local btns = serv:Channel("RGD")
 
-btns:Button("Randomly Gen Droids", function()
+btns:Button("Droid Killer", function()
 while wait() do
  for i,v in pairs(game.Workspace.Room.Enemies:GetDescendants()) do
      if v:IsA("Humanoid") and v.Parent.Name ~= game.Players.LocalPlayer.Name then
@@ -250,7 +250,7 @@ end)
 local btns = serv:Channel("Zombie Attack")
 
 btns:Button("ACSU-GUI", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/ZombieAtack.lua'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/ZombieAtack.lua"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
