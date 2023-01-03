@@ -306,7 +306,7 @@ end)
 
 local btns = serv:Channel("Prison Life")
 
-btns:Button(XMaster-Hub", function()
+btns:Button("XMaster-Hub", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
