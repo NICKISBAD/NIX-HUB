@@ -304,4 +304,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/reavscripts/sl2_autof
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+local btns = serv:Channel("Prison Life")
+
+btns:Button(XMaster-Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("FE Commands", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
