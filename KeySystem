@@ -6,7 +6,7 @@ local serv = win:Server("Preview", "")
 
 local btns = serv:Channel("Loader")
 
-_G.Key = ""
+_G.Key = "TheHiddenCode"
 _G.KeyInput = "string"
 
 btns:Textbox("Key", "Type here!", true, function(Value)
