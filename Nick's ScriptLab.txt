@@ -96,6 +96,13 @@ loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+btns:Seperator()
+
+btns:Button("Doors (Vynixu)", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 local btns = serv:Channel("Raise a floppa 2")
 
 btns:Button("Leo-Hub UI", function()
@@ -130,6 +137,13 @@ local btns = serv:Channel("Piggy")
 
 btns:Button("Piggy items grabber", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/LuA7x8e4"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Vynixu's PiggyUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Loader.lua"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
@@ -269,6 +283,20 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPT
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+btns:Seperator()
+
+btns:Button("XLP GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/petsimx.lua"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Zerox-Hub", function()
+loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/ZeeroxHub/main/Loader.lua')()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 local btns = serv:Channel("King Legacy")
 
 btns:Button("KingPiece GUI", function()
@@ -314,7 +342,7 @@ end)
 btns:Seperator()
 
 btns:Button("FE Commands", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
+loadstring(game:HttpGet("https://pastebin.com/raw/iZ64yzjE"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
