@@ -1,0 +1,21 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("The ScriptLab Loader")
+
+local serv = win:Server("Preview", "")
+
+local btns = serv:Channel("Loader")
+
+_G.Key = ""
+_G.KeyInput = "string"
+
+btns:Textbox("Key", "Type here!", true, function(Value)
+_G.KeyInput = Value
+end)
+
+btns:Button("Check Key", function()
+if _G.KeyInput == _G.Key then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20ScriptLab.txt"))()
+DiscordLib:Notification("Key Entered!", "Correct Key!", "Okay!")
+end
+end)
