@@ -6,7 +6,7 @@ local serv = win:Server("Preview", "")
 
 local btns = serv:Channel("Loader")
 
-_G.Key = "TheHiddenCode"
+_G.Key = "PizzaParty"
 _G.KeyInput = "string"
 
 btns:Textbox("Key", "Type here!", true, function(Value)
@@ -16,6 +16,11 @@ end)
 btns:Button("Check Key", function()
 if _G.KeyInput == _G.Key then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20ScriptLab.txt"))()
-DiscordLib:Notification("Key Entered!", "Correct Key!", "Okay!")
+wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Key Entered!";
+Text = "Correct Key Entered!";
+Duration = 6;
+})
 end
 end)
