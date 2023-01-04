@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20ScriptLab.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/KeySystem"))()
 
 --Supported Games: 
 --Blox fruits,
