@@ -15,7 +15,7 @@ end)
 
 btns:Button("Check Key", function()
 if _G.KeyInput == _G.Key then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20ScriptLab.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/NIX-HUB/main/Nick's%20ScriptLab.txt?token=GHSAT0AAAAAAB3EE2PLERMXHSXMTZPH7XOAY5VUGVA"))()
 wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Key Entered!";
