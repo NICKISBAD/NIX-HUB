@@ -124,6 +124,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/Raise-A-Fl
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+btns:Seperator()
+
+btns:Button("Unnamed GUI", function()
+loadstring(game:HttpGet("https://pst.klgrth.io/paste/8f7uz/raw"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
 local btns = serv:Channel("Project Pokemon")
 
 btns:Button("Project Pokemon", function()
@@ -329,6 +336,13 @@ btns:Seperator()
 
 btns:Button("FE Commands", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/iZ64yzjE"))()
+DiscordLib:Notification("Loaded!", "Done!", "Okay!")
+end)
+
+btns:Seperator()
+
+btns:Button("Oasis GUI", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/bruvzz/oasishub/main/script"))()
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
