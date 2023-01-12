@@ -215,7 +215,7 @@ end)
 local btns = serv:Channel("RGD")
 
 btns:Button("Droid Killer", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Droid-Killer/main/Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/RGD-Killer/main/Blobby"))()
 
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
