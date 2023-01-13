@@ -346,4 +346,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/bruvzz/oasishub/main/
 DiscordLib:Notification("Loaded!", "Done!", "Okay!")
 end)
 
+local btns = serv:Channel("HOURS")
+
+btns:Button("All Characters + Tempos", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Hours-script/main/Main"))()
+DiscordLib:Notification("Done!", "Rejoin after pressed", "Okay!")
+end)
+
 win:Server("Main", "http://www.roblox.com/asset/?id=6031075938")
