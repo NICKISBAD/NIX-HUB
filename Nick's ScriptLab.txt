@@ -57,11 +57,7 @@ end)
 btns:Seperator()
 
 btns:Button("All Weapons 2", function()
-for _,v in pairs(game.Players.LocalPlayer.Weapons:GetDescendants()) do
-if v:IsA("BoolValue") and v.Value == false then
-v.Value = true
-  end
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/UtmmGUI2/main/main"))()
 DiscordLib:Notification("Check your menu!", "Done!", "Okay!")
 end)
 
